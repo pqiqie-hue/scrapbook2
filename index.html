@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    name="theme-color"
+    content="#285a43"
+  >
+  <meta
+    name="description"
+    content="Green Birthday Book V3 — 10 Slide - interactive birthday scrapbook."
+  >
+  <title>Green Birthday Book V3 — 10 Slide</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CONFETTI -->
+  <div
+    id="confettiLayer"
+    aria-hidden="true"
+  ></div>
+
+  <!-- =========================
+       TOP BAR
+  ========================== -->
+  <header class="topbar no-print">
+
+    <div class="brand">
+
+      <span class="brand-mark">✿</span>
+
+      <div>
+        <strong>Green Birthday Book</strong>
+        <small>V3 · 10 slide digital scrapbook</small>
+      </div>
+
+    </div>
+
+    <div class="top-actions">
+
+      <button
+        class="glass-btn"
+        id="musicBtn"
+        type="button"
+      >
+        ♫ Music
+      </button>
+
+      <button
+        class="glass-btn"
+        id="saveBtn"
+        type="button"
+      >
+        💾 Save
+      </button>
+
+      <button
+        class="glass-btn"
+        id="printBtn"
+        type="button"
+      >
+        🖨 Print A4
+      </button>
+
+      <button
+        class="green-btn"
+        id="editBtn"
+        type="button"
+      >
+        ✦ Customize
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- =========================
+       MAIN WORKSPACE
+  ========================== -->
+  <main class="workspace">
+
+    <!-- =========================
+         BOOK AREA
+    ========================== -->
+    <section class="book-area">
+
+      <div class="book-shadow"></div>
+
+      <div
+        class="book-shell"
+        id="bookShell"
+      >
+
+        <div class="book-spine"></div>
+
+        <!-- PAGE 1 - COVER -->
+        <article
+          class="book-page cover"
+          data-page="0"
+        >
+
+          <div class="page-paper">
+
+            <div class="moving-polka"></div>
+
+            <div class="cover-decoration leaf-one">
+              ❋
+            </div>
+
+            <div class="cover-decoration leaf-two">
+              ✿
+            </div>
+
+            <div class="cover-main">
+
+              <div class="cover-top">
+
+                <span
+                  class="mini-label editable"
+                  data-key="coverEyebrow"
+                >
+                  A LITTLE SURPRISE FOR YOU
+                </span>
+
+              </div>
+
+              <h1 class="cover-title">
+
+                <span
+                  class="editable"
+                  data-key="coverTitle1"
+                >
+                  Happy
+                </span>
+
+                <em
+                  class="editable"
+                  data-key="coverTitle2"
+                >
+                  Birthday
+                </em>
+
+              </h1>
+
+              <!-- ENVELOPE -->
+              <div
+                class="envelope-wrap"
+                id="envelopeWrap"
+                role="button"
+                tabindex="0"
+                aria-label="Buka amplop"
+              >
+
+                <div class="envelope">
+
+                  <div class="env-back"></div>
+
+                  <div class="env-letter">
+
+                    <span>for</span>
+
+                    <strong
+                      class="editable"
+                      data-key="name"
+                    >
+                      Someone Special
+                    </strong>
+
+                    <small>♡</small>
+
+                  </div>
+
+                  <div class="env-left"></div>
+
+                  <div class="env-right"></div>
+
+                  <div class="env-bottom"></div>
+
+                  <div class="env-flap"></div>
+
+                  <div class="wax">
+                    ♡
+                  </div>
+
+                </div>
+
+              </div>
+
+              <p
+                class="cover-hint editable"
+                data-key="coverHint"
+              >
+                tap the envelope to open your little book
+              </p>
+
+              <button
+                class="pill-btn no-print"
+                id="openBook"
+                type="button"
+              >
+                <span
+                  class="editable"
+                  data-key="openBookText"
+                >
+                  OPEN THE BOOK
+                </span>
+              </button>
+
+            </div>
+
+            <div class="corner-stamp">
+
+              <span
+                class="editable"
+                data-key="coverDate"
+              >
+                01 · 10 · 2026
+              </span>
+
+              <small
+                class="editable"
+                data-key="coverEdition"
+              >
+                BIRTHDAY EDITION
+              </small>
+
+            </div>
+
+            <div class="page-num">
+              01
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PAGE 2 - LETTER -->
+        <article
+          class="book-page"
+          data-page="1"
+        >
+
+          <div class="page-paper">
+
+            <div class="inner-grid"></div>
+
+            <div class="page-content letter-layout">
+
+              <div class="section-kicker">
+
+                <span>02</span>
+
+                <span
+                  class="editable"
+                  data-key="letterKicker"
+                >
+                  A LETTER FOR YOU
+                </span>
+
+              </div>
+
+              <h2
+                class="display editable"
+                data-key="letterTitle"
+              >
+                A tiny letter for my favorite person
+              </h2>
+
+              <div class="paper-letter">
+
+                <div class="paper-tape tape-a"></div>
+                <div class="paper-tape tape-b"></div>
+
+                <p
+                  class="editable multiline"
+                  data-key="letter"
+                >
+                  Happy birthday to you! Today is a tiny reminder of how grateful I am that you exist. I hope this new chapter brings you soft days, loud laughter, brave dreams, and lots of little reasons to smile.
+                </p>
+
+                <div class="letter-line"></div>
+
+                <p
+                  class="signature script editable"
+                  data-key="signature"
+                >
+                  with love, always ♡
+                </p>
+
+              </div>
+
+              <div class="quote-card">
+
+                <span
+                  class="editable"
+                  data-key="quoteIconLeft"
+                >
+                  ✿
+                </span>
+
+                <p
+                  class="editable"
+                  data-key="quote"
+                >
+                  “May this year feel like a collection of beautiful little moments.”
+                </p>
+
+                <span>✿</span>
+
+              </div>
+
+            </div>
+
+            <div class="page-num">
+              02
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PAGE 3 - MEMORIES -->
+        <article
+          class="book-page"
+          data-page="2"
+        >
+
+          <div class="page-paper">
+
+            <div class="page-content">
+
+              <div class="section-kicker centered">
+
+                <span>03</span>
+
+                <span
+                  class="editable"
+                  data-key="memoryKicker"
+                >
+                  LITTLE MEMORIES
+                </span>
+
+              </div>
+
+              <h2
+                class="display centered editable"
+                data-key="memoryTitle"
+              >
+                Us, in little frames
+              </h2>
+
+              <div class="scrap-grid">
+
+                <figure class="scrap-photo p1">
+
+                  <div class="tape tape-photo t1"></div>
+
+                  <div class="photo-slot">
+
+                    <img
+                      class="photo-img"
+                      data-photo-index="0"
+                      alt="Memory 1"
+                    >
+
+                  </div>
+
+                  <figcaption
+                    class="editable"
+                    data-key="cap1"
+                  >
+                    one of my favorite moments
+                  </figcaption>
+
+                </figure>
+
+                <figure class="scrap-photo p2">
+
+                  <div class="tape tape-photo t2"></div>
+
+                  <div class="photo-slot">
+
+                    <img
+                      class="photo-img"
+                      data-photo-index="1"
+                      alt="Memory 2"
+                    >
+
+                  </div>
+
+                  <figcaption
+                    class="editable"
+                    data-key="cap2"
+                  >
+                    your smile makes everything warmer
+                  </figcaption>
+
+                </figure>
+
+                <figure class="scrap-photo p3">
+
+                  <div class="tape tape-photo t3"></div>
+
+                  <div class="photo-slot">
+
+                    <img
+                      class="photo-img"
+                      data-photo-index="2"
+                      alt="Memory 3"
+                    >
+
+                  </div>
+
+                  <figcaption
+                    class="editable"
+                    data-key="cap3"
+                  >
+                    a moment I want to keep
+                  </figcaption>
+
+                </figure>
+
+                <figure class="scrap-photo p4">
+
+                  <div class="tape tape-photo t4"></div>
+
+                  <div class="photo-slot">
+
+                    <img
+                      class="photo-img"
+                      data-photo-index="3"
+                      alt="Memory 4"
+                    >
+
+                  </div>
+
+                  <figcaption
+                    class="editable"
+                    data-key="cap4"
+                  >
+                    a memory worth keeping
+                  </figcaption>
+
+                </figure>
+
+              </div>
+
+            </div>
+
+            <div class="page-num">
+              03
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PAGE 4 - REASONS -->
+        <article
+          class="book-page"
+          data-page="3"
+        >
+
+          <div class="page-paper">
+
+            <div class="page-content reasons-layout">
+
+              <div class="section-kicker">
+
+                <span>04</span>
+
+                <span
+                  class="editable"
+                  data-key="reasonKicker"
+                >
+                  LITTLE THINGS
+                </span>
+
+              </div>
+
+              <h2
+                class="display editable"
+                data-key="reasonTitle"
+              >
+                Reasons I appreciate you
+              </h2>
+
+              <div class="reason-grid">
+
+                <div class="reason-card">
+
+                  <span class="reason-number">01</span>
+
+                  <h3
+                    class="editable"
+                    data-key="reason1Title"
+                  >
+                    Your kindness
+                  </h3>
+
+                  <p
+                    class="editable"
+                    data-key="reason1"
+                  >
+                    You make ordinary moments feel a little more special.
+                  </p>
+
+                </div>
+
+                <div class="reason-card">
+
+                  <span class="reason-number">02</span>
+
+                  <h3
+                    class="editable"
+                    data-key="reason2Title"
+                  >
+                    Your laugh
+                  </h3>
+
+                  <p
+                    class="editable"
+                    data-key="reason2"
+                  >
+                    It somehow makes even the simplest day brighter.
+                  </p>
+
+                </div>
+
+                <div class="reason-card">
+
+                  <span class="reason-number">03</span>
+
+                  <h3
+                    class="editable"
+                    data-key="reason3Title"
+                  >
+                    Your presence
+                  </h3>
+
+                  <p
+                    class="editable"
+                    data-key="reason3"
+                  >
+                    Thank you for being someone I can always appreciate.
+                  </p>
+
+                </div>
+
+                <div class="reason-card">
+
+                  <span class="reason-number">04</span>
+
+                  <h3
+                    class="editable"
+                    data-key="reason4Title"
+                  >
+                    Your dreams
+                  </h3>
+
+                  <p
+                    class="editable"
+                    data-key="reason4"
+                  >
+                    I hope you keep chasing the things that make you happy.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div class="small-quote">
+
+                <span>✦</span>
+
+                <p
+                  class="editable"
+                  data-key="reasonQuote"
+                >
+                  Keep being wonderfully you.
+                </p>
+
+                <span>✦</span>
+
+              </div>
+
+            </div>
+
+            <div class="page-num">
+              04
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PAGE 5 - WISHES -->
+        <article
+          class="book-page"
+          data-page="4"
+        >
+
+          <div class="page-paper">
+
+            <div class="page-content wishes-layout">
+
+              <div class="section-kicker">
+
+                <span>05</span>
+
+                <span
+                  class="editable"
+                  data-key="wishKicker"
+                >
+                  BIRTHDAY WISHES
+                </span>
+
+              </div>
+
+              <h2
+                class="display editable"
+                data-key="wishTitle"
+              >
+                A pocket full of wishes
+              </h2>
+
+              <div class="wish-list">
+
+                <div class="wish-item">
+
+                  <span>01</span>
+
+                  <p
+                    class="editable"
+                    data-key="wish1"
+                  >
+                    May your days be filled with things that make you genuinely happy.
+                  </p>
+
+                </div>
+
+                <div class="wish-item">
+
+                  <span>02</span>
+
+                  <p
+                    class="editable"
+                    data-key="wish2"
+                  >
+                    May every dream you are working toward slowly find its way to you.
+                  </p>
+
+                </div>
+
+                <div class="wish-item">
+
+                  <span>03</span>
+
+                  <p
+                    class="editable"
+                    data-key="wish3"
+                  >
+                    May you always have reasons to laugh, rest, grow, and begin again.
+                  </p>
+
+                </div>
+
+                <div class="wish-item">
+
+                  <span>04</span>
+
+                  <p
+                    class="editable"
+                    data-key="wish4"
+                  >
+                    May this new chapter bring beautiful surprises you never expected.
+                  </p>
+
+                </div>
+
+                <div class="wish-item">
+
+                  <span>05</span>
+
+                  <p
+                    class="editable"
+                    data-key="wish5"
+                  >
+                    And most of all, may you always remember how special you are.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div class="date-card">
+
+                <span
+                  class="editable"
+                  data-key="wishDateLabel"
+                >
+                  TODAY IS YOUR DAY
+                </span>
+
+                <strong
+                  class="editable"
+                  data-key="wishDate"
+                >
+                  01 · 10 · 2026
+                </strong>
+
+              </div>
+
+            </div>
+
+            <div class="page-num">
+              05
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PAGE 6 - MORE MEMORIES -->
+        <article
+          class="book-page"
+          data-page="5"
+        >
+
+          <div class="page-paper">
+
+            <div class="page-content">
+
+              <div class="section-kicker centered">
+
+                <span>06</span>
+
+                <span
+                  class="editable"
+                  data-key="moreMemoryKicker"
+                >
+                  MORE LITTLE MEMORIES
+                </span>
+
+              </div>
+
+              <h2
+                class="display centered editable"
+                data-key="moreMemoryTitle"
+              >
+                More moments to keep
+              </h2>
+
+              <div class="mini-scrap-grid">
+
+                <figure class="scrap-photo mini-photo">
+
+                  <div class="tape tape-photo t5"></div>
+
+                  <div class="photo-slot">
+
+                    <img
+                      class="photo-img"
+                      data-photo-index="4"
+                      alt="Memory 5"
+                    >
+
+                  </div>
+
+                  <figcaption
+                    class="editable"
+                    data-key="cap5"
+                  >
+                    little moment, big memory
+                  </figcaption>
+
+                </figure>
+
+                <figure class="scrap-photo mini-photo">
+
+                  <div class="tape tape-photo t6"></div>
+
+                  <div class="photo-slot">
+
+                    <img
+                      class="photo-img"
+                      data-photo-index="5"
+                      alt="Memory 6"
+                    >
+
+                  </div>
+
+                  <figcaption
+                    class="editable"
+                    data-key="cap6"
+                  >
+                    another page of us
+                  </figcaption>
+
+                </figure>
+
+                <figure class="scrap-photo mini-photo">
+
+                  <div class="tape tape-photo t7"></div>
+
+                  <div class="photo-slot">
+
+                    <img
+                      class="photo-img"
+                      data-photo-index="6"
+                      alt="Memory 7"
+                    >
+
+                  </div>
+
+                  <figcaption
+                    class="editable"
+                    data-key="cap7"
+                  >
+                    one more memory
+                  </figcaption>
+
+                </figure>
+
+                <figure class="scrap-photo mini-photo">
+
+                  <div class="tape tape-photo t8"></div>
+
+                  <div class="photo-slot">
+
+                    <img
+                      class="photo-img"
+                      data-photo-index="7"
+                      alt="Memory 8"
+                    >
+
+                  </div>
+
+                  <figcaption
+                    class="editable"
+                    data-key="cap8"
+                  >
+                    a day I want to remember
+                  </figcaption>
+
+                </figure>
+
+              </div>
+
+              <p
+                class="bottom-note centered editable"
+                data-key="moreMemoryNote"
+              >
+                Some memories deserve their own little page.
+              </p>
+
+            </div>
+
+            <div class="page-num">
+              06
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PAGE 7 - THINGS I REMEMBER -->
+        <article
+          class="book-page"
+          data-page="6"
+        >
+
+          <div class="page-paper">
+
+            <div class="page-content reasons-layout">
+
+              <div class="section-kicker">
+
+                <span>07</span>
+
+                <span
+                  class="editable"
+                  data-key="rememberKicker"
+                >
+                  LITTLE THINGS I REMEMBER
+                </span>
+
+              </div>
+
+              <h2
+                class="display editable"
+                data-key="rememberTitle"
+              >
+                Tiny details that stay with me
+              </h2>
+
+              <div class="remember-grid">
+
+                <div class="remember-card">
+
+                  <span>✿</span>
+
+                  <p
+                    class="editable"
+                    data-key="remember1"
+                  >
+                    The little conversations that somehow become my favorite memories.
+                  </p>
+
+                </div>
+
+                <div class="remember-card">
+
+                  <span>♡</span>
+
+                  <p
+                    class="editable"
+                    data-key="remember2"
+                  >
+                    The random jokes that make an ordinary day feel lighter.
+                  </p>
+
+                </div>
+
+                <div class="remember-card">
+
+                  <span>✦</span>
+
+                  <p
+                    class="editable"
+                    data-key="remember3"
+                  >
+                    The moments when everything feels simple and comfortable.
+                  </p>
+
+                </div>
+
+                <div class="remember-card">
+
+                  <span>☘</span>
+
+                  <p
+                    class="editable"
+                    data-key="remember4"
+                  >
+                    The small things you do without realizing how meaningful they are.
+                  </p>
+
+                </div>
+
+                <div class="remember-card wide">
+
+                  <span>❋</span>
+
+                  <p
+                    class="editable"
+                    data-key="remember5"
+                  >
+                    If I could save every tiny happy moment in a jar, this whole book would be full of them.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div class="small-quote">
+
+                <span>✦</span>
+
+                <p
+                  class="editable"
+                  data-key="rememberQuote"
+                >
+                  The little things are often the biggest things.
+                </p>
+
+                <span>✦</span>
+
+              </div>
+
+            </div>
+
+            <div class="page-num">
+              07
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PAGE 8 - ONE PHOTO ONE STORY -->
+        <article
+          class="book-page"
+          data-page="7"
+        >
+
+          <div class="page-paper">
+
+            <div class="page-content story-layout">
+
+              <div class="section-kicker">
+
+                <span>08</span>
+
+                <span
+                  class="editable"
+                  data-key="storyKicker"
+                >
+                  ONE PHOTO, ONE STORY
+                </span>
+
+              </div>
+
+              <h2
+                class="display editable"
+                data-key="storyTitle"
+              >
+                A picture worth keeping
+              </h2>
+
+              <div class="featured-memory">
+
+                <div class="featured-photo-wrap">
+
+                  <div class="tape tape-feature"></div>
+
+                  <img
+                    id="featuredPhoto"
+                    class="featured-photo photo-img"
+                    data-photo-index="8"
+                    alt="Featured memory"
+                  >
+
+                </div>
+
+                <div class="featured-note">
+
+                  <span
+                    class="story-label editable"
+                    data-key="storyLabel"
+                  >
+                    THIS ONE
+                  </span>
+
+                  <p
+                    class="editable multiline"
+                    data-key="storyText"
+                  >
+                    There are some pictures that are more than pictures. They become little reminders of a day, a feeling, a laugh, or a moment we never want to forget.
+                  </p>
+
+                  <strong
+                    class="script editable"
+                    data-key="storySign"
+                  >
+                    keep this one close ♡
+                  </strong>
+
+                </div>
+
+              </div>
+
+              <div class="story-mini-row">
+
+                <div class="story-mini">
+
+                  <img
+                    class="photo-img"
+                    data-photo-index="9"
+                    alt="Memory 10"
+                  >
+
+                </div>
+
+                <div class="story-mini">
+
+                  <img
+                    class="photo-img"
+                    data-photo-index="10"
+                    alt="Memory 11"
+                  >
+
+                </div>
+
+                <div class="story-mini">
+
+                  <img
+                    class="photo-img"
+                    data-photo-index="11"
+                    alt="Memory 12"
+                  >
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="page-num">
+              08
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PAGE 9 - FUTURE -->
+        <article
+          class="book-page"
+          data-page="8"
+        >
+
+          <div class="page-paper">
+
+            <div class="page-content future-layout">
+
+              <div class="section-kicker">
+
+                <span>09</span>
+
+                <span
+                  class="editable"
+                  data-key="futureKicker"
+                >
+                  FOR THE DAYS AHEAD
+                </span>
+
+              </div>
+
+              <h2
+                class="display editable"
+                data-key="futureTitle"
+              >
+                More chapters are waiting
+              </h2>
+
+              <p
+                class="future-intro editable"
+                data-key="futureIntro"
+              >
+                Here is to all the moments that have not happened yet.
+              </p>
+
+              <div class="future-grid">
+
+                <div class="future-card">
+
+                  <span>01</span>
+
+                  <h3
+                    class="editable"
+                    data-key="future1Title"
+                  >
+                    New adventures
+                  </h3>
+
+                  <p
+                    class="editable"
+                    data-key="future1"
+                  >
+                    More places, more stories, more little adventures to remember.
+                  </p>
+
+                </div>
+
+                <div class="future-card">
+
+                  <span>02</span>
+
+                  <h3
+                    class="editable"
+                    data-key="future2Title"
+                  >
+                    Bigger dreams
+                  </h3>
+
+                  <p
+                    class="editable"
+                    data-key="future2"
+                  >
+                    Keep believing in the things you want to build for yourself.
+                  </p>
+
+                </div>
+
+                <div class="future-card">
+
+                  <span>03</span>
+
+                  <h3
+                    class="editable"
+                    data-key="future3Title"
+                  >
+                    Happy days
+                  </h3>
+
+                  <p
+                    class="editable"
+                    data-key="future3"
+                  >
+                    I hope there are many more days that give you a reason to smile.
+                  </p>
+
+                </div>
+
+                <div class="future-card">
+
+                  <span>04</span>
+
+                  <h3
+                    class="editable"
+                    data-key="future4Title"
+                  >
+                    New memories
+                  </h3>
+
+                  <p
+                    class="editable"
+                    data-key="future4"
+                  >
+                    One day, we will look back at these pages and remember how far we came.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div class="future-footer">
+
+                <span>✿</span>
+
+                <p
+                  class="script editable"
+                  data-key="futureQuote"
+                >
+                  here is to tomorrow
+                </p>
+
+                <span>✿</span>
+
+              </div>
+
+            </div>
+
+            <div class="page-num">
+              09
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PAGE 10 - FINAL -->
+        <article
+          class="book-page final-page"
+          data-page="9"
+        >
+
+          <div class="page-paper">
+
+            <div class="final-decoration final-one">
+              ✿
+            </div>
+
+            <div class="final-decoration final-two">
+              ❋
+            </div>
+
+            <div class="final-main">
+
+              <span
+                class="mini-label editable"
+                data-key="finalEyebrow"
+              >
+                ONE LAST THING
+              </span>
+
+              <h2
+                class="final-title editable"
+                data-key="finalTitle"
+              >
+                Happy Birthday, You ♡
+              </h2>
+
+              <p
+                class="final-message editable multiline"
+                data-key="finalMessage"
+              >
+                I hope this little book reminds you that your birthday is worth celebrating, your dreams are worth chasing, and every new chapter deserves to be welcomed with hope.
+              </p>
+
+              <div class="final-divider">
+                <span>✦</span>
+                <span>✦</span>
+                <span>✦</span>
+              </div>
+
+              <p
+                class="final-sign script editable"
+                data-key="finalSign"
+              >
+                made with a little love & lots of memories ♡
+              </p>
+
+              <div class="final-actions no-print">
+
+                <button
+                  class="pill-btn"
+                  id="celebrateBtn"
+                  type="button"
+                >
+                  <span
+                    class="editable"
+                    data-key="celebrateText"
+                  >
+                    CELEBRATE ✨
+                  </span>
+                </button>
+
+                <button
+                  class="text-btn"
+                  id="restartBtn"
+                  type="button"
+                >
+                  <span
+                    class="editable"
+                    data-key="restartText"
+                  >
+                    ↻ Start again
+                  </span>
+                </button>
+
+              </div>
+
+            </div>
+
+            <div class="page-num">
+              10
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- BOOK CONTROLS -->
+      <div class="book-controls no-print">
+
+        <button
+          class="nav-btn"
+          id="prevBtn"
+          type="button"
+        >
+          ←
+        </button>
+
+        <div
+          class="dots"
+          id="dots"
+        ></div>
+
+        <button
+          class="nav-btn"
+          id="nextBtn"
+          type="button"
+        >
+          →
+        </button>
+
+      </div>
+
+
+      <p class="book-tip no-print">
+        Use <kbd>←</kbd> <kbd>→</kbd> or click the arrows to turn pages.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         EDITOR PANEL
+    ========================== -->
+    <aside
+      class="editor no-print"
+      id="editor"
+    >
+
+      <div class="editor-head">
+
+        <div>
+
+          <span class="editor-eyebrow">
+            CUSTOMIZE
+          </span>
+
+          <h2>
+            Make it yours
+          </h2>
+
+        </div>
+
+        <button
+          class="close-editor"
+          id="closeEditor"
+          type="button"
+          aria-label="Close"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <div class="editor-scroll">
+
+        <!-- ALL TEXT -->
+        <section class="editor-section">
+
+          <div class="section-title-row">
+
+            <h3>
+              Semua kata & kalimat
+            </h3>
+
+            <span>
+              ALL TEXT
+            </span>
+
+          </div>
+
+          <p class="editor-help">
+            Semua tulisan di buku dapat diganti di sini. Kamu juga bisa double-click tulisan langsung pada halaman.
+          </p>
+
+          <div
+            id="allTextEditor"
+            class="all-text-editor"
+          ></div>
+
+          <div class="editor-actions-row">
+
+            <button
+              class="green-btn wide"
+              id="applyAllText"
+              type="button"
+            >
+              ✓ Terapkan semua teks
+            </button>
+
+            <button
+              class="soft-btn wide"
+              id="resetTexts"
+              type="button"
+            >
+              ↺ Kembalikan teks bawaan
+            </button>
+
+          </div>
+
+        </section>
+
+
+        <!-- PHOTOS -->
+        <section class="editor-section">
+
+          <div class="section-title-row">
+
+            <h3>
+              Photos
+            </h3>
+
+            <span>
+              UP TO 12
+            </span>
+
+          </div>
+
+          <label class="upload-box">
+
+            <input
+              id="photoInput"
+              type="file"
+              accept="image/*"
+              multiple
+            >
+
+            <span class="upload-icon">
+              ＋
+            </span>
+
+            <strong>
+              Upload photos
+            </strong>
+
+            <small>
+              Pilih hingga 12 foto sekaligus
+            </small>
+
+          </label>
+
+          <div
+            class="upload-preview"
+            id="uploadPreview"
+          ></div>
+
+        </section>
+
+
+        <!-- THEME -->
+        <section class="editor-section">
+
+          <div class="section-title-row">
+
+            <h3>
+              Theme
+            </h3>
+
+            <span>
+              COLOR
+            </span>
+
+          </div>
+
+          <div class="theme-grid">
+
+            <button
+              class="theme-card active"
+              data-theme="sage"
+              type="button"
+            >
+              <span class="theme-dot sage"></span>
+              Sage
+            </button>
+
+            <button
+              class="theme-card"
+              data-theme="mint"
+              type="button"
+            >
+              <span class="theme-dot mint"></span>
+              Mint
+            </button>
+
+            <button
+              class="theme-card"
+              data-theme="matcha"
+              type="button"
+            >
+              <span class="theme-dot matcha"></span>
+              Matcha
+            </button>
+
+            <button
+              class="theme-card"
+              data-theme="forest"
+              type="button"
+            >
+              <span class="theme-dot forest"></span>
+              Forest
+            </button>
+
+          </div>
+
+        </section>
+
+
+        <!-- BACKGROUND -->
+        <section class="editor-section">
+
+          <div class="section-title-row">
+
+            <h3>
+              Background
+            </h3>
+
+            <span>
+              IMAGE / VIDEO
+            </span>
+
+          </div>
+
+          <label class="upload-box small">
+
+            <input
+              id="backgroundInput"
+              type="file"
+              accept="image/*,video/*"
+            >
+
+            <span class="upload-icon">
+              ⌁
+            </span>
+
+            <strong>
+              Upload background
+            </strong>
+
+            <small>
+              Gambar atau video
+            </small>
+
+          </label>
+
+          <button
+            class="soft-btn wide"
+            id="removeBackground"
+            type="button"
+          >
+            Remove background
+          </button>
+
+        </section>
+
+
+        <!-- MUSIC -->
+        <section class="editor-section">
+
+          <div class="section-title-row">
+
+            <h3>
+              Music
+            </h3>
+
+            <span>
+              AUDIO
+            </span>
+
+          </div>
+
+          <label class="upload-box small">
+
+            <input
+              id="musicInput"
+              type="file"
+              accept="audio/*"
+            >
+
+            <span class="upload-icon">
+              ♫
+            </span>
+
+            <strong>
+              Upload music
+            </strong>
+
+            <small>
+              MP3 / WAV / audio browser
+            </small>
+
+          </label>
+
+          <button
+            class="soft-btn wide"
+            id="removeMusic"
+            type="button"
+          >
+            Remove music
+          </button>
+
+        </section>
+
+
+        <!-- DISPLAY -->
+        <section class="editor-section">
+
+          <div class="section-title-row">
+
+            <h3>
+              Display
+            </h3>
+
+            <span>
+              STYLE
+            </span>
+
+          </div>
+
+          <label class="switch-row">
+
+            <span>
+              Polka background
+            </span>
+
+            <input
+              id="polkaToggle"
+              type="checkbox"
+              checked
+            >
+
+            <span class="switch-ui"></span>
+
+          </label>
+
+
+          <label class="range-row">
+
+            <span>
+              Text size
+            </span>
+
+            <input
+              id="fontRange"
+              type="range"
+              min="85"
+              max="120"
+              value="100"
+            >
+
+            <output id="fontOutput">
+              100%
+            </output>
+
+          </label>
+
+        </section>
+
+
+        <!-- SETTINGS -->
+        <section class="editor-section">
+
+          <div class="section-title-row">
+
+            <h3>
+              Settings
+            </h3>
+
+            <span>
+              FILE
+            </span>
+
+          </div>
+
+          <div class="setting-buttons">
+
+            <button
+              class="soft-btn"
+              id="downloadSettings"
+              type="button"
+            >
+              ↓ Save JSON
+            </button>
+
+            <label class="soft-btn file-btn">
+
+              ↑ Load JSON
+
+              <input
+                id="uploadSettings"
+                type="file"
+                accept="application/json,.json"
+              >
+
+            </label>
+
+            <button
+              class="danger-btn"
+              id="resetAll"
+              type="button"
+            >
+              Reset
+            </button>
+
+          </div>
+
+        </section>
+
+
+        <!-- PRINT -->
+        <section class="editor-section">
+
+          <button
+            class="green-btn wide"
+            id="printFromPanel"
+            type="button"
+          >
+            🖨 Print all pages A4
+          </button>
+
+        </section>
+
+      </div>
+
+    </aside>
+
+  </main>
+
+
+  <!-- =========================
+       AUDIO
+  ========================== -->
+  <audio
+    id="bgMusic"
+    loop
+  ></audio>
+
+
+  <!-- =========================
+       BACKGROUND VIDEO
+  ========================== -->
+  <video
+    id="backgroundVideo"
+    class="background-media"
+    autoplay
+    muted
+    loop
+    playsinline
+  ></video>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
